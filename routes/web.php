@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,9 @@ Route::get('/migraciones', function () {
 Route::get('/seeders', function () {
     return view('seeders');
 })->name('Seeders');
+
+Route::get('/mail', function () {
+    return view('mail');
+})->name('Mail');
+
+Route::post('/sugerencia', [mailController::class, 'enviarMail']);

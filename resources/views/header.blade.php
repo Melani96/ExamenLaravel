@@ -68,7 +68,7 @@
             <a class="nav-link" href="{{ route('Seeders') }}">Seeders</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mail</a>
+            <a class="nav-link" href="{{ route('Mail') }}">Mail</a>
           </li>
         </ul>
       </div>
