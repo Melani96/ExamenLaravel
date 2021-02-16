@@ -18,7 +18,6 @@ class CreateAlumnosTable extends Migration
             $table->string('nombre',30);
             $table->string('apellidos',50);
             $table->string('dni',10)->unique();
-            $table->timestamps();
         });
     }
 
